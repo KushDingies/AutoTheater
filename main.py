@@ -1,24 +1,16 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 04 19:02:17 2015
-
-@author: Misha Kushnir
-"""
-
-from script import Script
-from line import Line
-from character import Character
+#from script import Script
+#from line import Line
+#from character import Character
+from stageManager import StageManager
 import sys
 
 def main(argv):
-    
-    script = Script("TEST SCRIPT")
-    steve = Character("STEVE")
-    bob = Character("BOB")
-    line = Line("I like " + argv[0] + ".", steve)
-    line2 = Line("Dude, me too!", bob)
-    script.addLine(line)
-    script.addLine(line2)
-    script.printScript()
+    actors = int(argv[0])
+    topics = argv[1:]
+    pool = ["I like " + topics[0] + ".", "Hello!", "I don't like " + topics[0] + "."]
+
+    manager = StageManager(actors, topics, pool)
+    manager.produceScript(topics[0])
+    manager.script.printScript()
 
 if __name__ == "__main__": main(sys.argv[1:])
