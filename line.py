@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 04 19:12:50 2015
-
-@author: Misha Kushnir
-"""
-
 from character import Character
 
 class Line:

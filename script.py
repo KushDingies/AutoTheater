@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 04 19:09:23 2015
-
-@author: Misha Kushnir
-"""
-
 from line import Line
 
 class Script:
