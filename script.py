@@ -22,4 +22,4 @@ class Script:
         print "\n" + self.title
         for line in self.lines:
             print line.character.name + ": " + line.line
-        print "\n"
+        print "~fin~\n"
