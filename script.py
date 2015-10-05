@@ -21,5 +21,5 @@ class Script:
     def printScript(self):
         print "\n" + self.title
         for line in self.lines:
-            print line.character.name + ": " + line.line
+            line.printLine()
         print "~fin~\n"
